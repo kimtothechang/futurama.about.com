@@ -17,7 +17,7 @@ export const FuturamaInfoCard = ({ futuramaData }: FuturamaProps) => {
       <FutuSynopsisGreen>Creators</FutuSynopsisGreen>
       {creators.map(({ name, url }) => {
         return (
-          <div>
+          <div key={`about-${name}`}>
             <p>{name}</p>
             <p>{url}</p>
           </div>

@@ -20,7 +20,7 @@ export const FutuInfoContainer = ({ name }: FuturamaContainerProps) => {
         {data.map((futuinfoData: FutuInfo) => {
           return (
             <FuturamaInfoCard
-              key={`${name}-beer-list-${futuinfoData.id}`}
+              key={`${name}-list-${futuinfoData.id}`}
               futuramaData={futuinfoData}
             />
           );
