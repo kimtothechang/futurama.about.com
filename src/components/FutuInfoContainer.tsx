@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Error, Loading, FuturamaInfoCard } from ".";
+import { Error, Loading, FutuInfoCard } from ".";
 import { useFutuData } from "../hooks/useFutuData";
 import { FutuInfo } from "../types/FutuInfo";
 
@@ -16,16 +16,22 @@ export const FutuInfoContainer = ({ name }: FuturamaContainerProps) => {
   return (
     <div>
       <h1>Futurama {name}</h1>
-      <div>
+      <CharacterContainer>
         {data.map((futuinfoData: FutuInfo) => {
           return (
-            <FuturamaInfoCard
+            <FutuInfoCard
               key={`${name}-list-${futuinfoData.id}`}
               futuramaData={futuinfoData}
             />
           );
         })}
-      </div>
+      </CharacterContainer>
     </div>
   );
 };
+
+const CharacterContainer = styled.div`
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+`;

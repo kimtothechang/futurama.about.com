@@ -5,7 +5,7 @@ interface FuturamaProps {
   futuramaData: FutuInfo;
 }
 
-export const FuturamaInfoCard = ({ futuramaData }: FuturamaProps) => {
+export const FutuInfoCard = ({ futuramaData }: FuturamaProps) => {
   const { synopsis, yearsAired, creators } = futuramaData;
 
   return (
