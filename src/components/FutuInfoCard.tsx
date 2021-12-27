@@ -15,11 +15,11 @@ export const FuturamaInfoCard = ({ futuramaData }: FuturamaProps) => {
       <FutuSynopsisBlue>YearsAired</FutuSynopsisBlue>
       <p>{yearsAired}</p>
       <FutuSynopsisGreen>Creators</FutuSynopsisGreen>
-      {creators.map((creator) => {
+      {creators.map(({ name, url }) => {
         return (
           <div>
-            <p>{creator.name}</p>
-            <p>{creator.url}</p>
+            <p>{name}</p>
+            <p>{url}</p>
           </div>
         );
       })}
