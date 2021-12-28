@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>Information &rarr;</h2>
-            <p>Information about Anime</p>
+            <p>about Anime</p>
           </a>
 
           <a
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>Characters &rarr;</h2>
-            <p>Characters detail</p>
+            <p>detail</p>
           </a>
 
           <a
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>Cast &rarr;</h2>
-            <p>Cast</p>
+            <p>about Actors</p>
           </a>
 
           <a
@@ -54,21 +54,21 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>Episode &rarr;</h2>
-            <p>Episode</p>
+            <p>detail</p>
           </a>
           <a
             href="https://futurama-about-com.vercel.app/futurama/questions"
             className={styles.card}
           >
             <h2>Questions &rarr;</h2>
-            <p>Questions</p>
+            <p>Quiz</p>
           </a>
           <a
             href="https://futurama-about-com.vercel.app/futurama/inventory"
             className={styles.card}
           >
             <h2>Inventory &rarr;</h2>
-            <p>Inventory</p>
+            <p>Goods</p>
           </a>
         </div>
       </main>
