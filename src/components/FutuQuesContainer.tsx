@@ -17,21 +17,21 @@ export const FutuQuesContainer = ({ name }: FuturamaContainerProps) => {
     <div>
       <h1>Futurama {name}</h1>
       <div>
-        <FutuQuesWrapper>
+        <QuesWrapper>
           {data.map((futuCastData: FutuQues) => {
             return (
               <FutuQuesCard key={`about-${name}`} futuramaData={futuCastData} />
             );
           })}
-        </FutuQuesWrapper>
+        </QuesWrapper>
       </div>
     </div>
   );
 };
 
-const FutuQuesWrapper = styled.div`
+const QuesWrapper = styled.div`
   display: grid;
-  gap: 1em;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-flow: dense;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5em;
+  margin-bottom: 100px;
 `;

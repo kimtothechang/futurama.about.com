@@ -17,12 +17,20 @@ export const FutuEpiContainer = ({ name }: FuturamaContainerProps) => {
     <div>
       <h1>Futurama {name}</h1>
       <div>
-        {data.map((futuCastData: FutuEpi) => {
-          return (
-            <FutuEpiCard key={`about-${name}`} futuramaData={futuCastData} />
-          );
-        })}
+        <CharWrapper>
+          {data.map((futuCastData: FutuEpi) => {
+            return (
+              <FutuEpiCard key={`about-${name}`} futuramaData={futuCastData} />
+            );
+          })}
+        </CharWrapper>
       </div>
     </div>
   );
 };
+
+const CharWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+`;

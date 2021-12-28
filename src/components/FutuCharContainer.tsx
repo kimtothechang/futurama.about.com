@@ -17,12 +17,21 @@ export const FutuCharContainer = ({ name }: FuturamaContainerProps) => {
     <div>
       <h1>Futurama {name}</h1>
       <div>
-        {data.map((futuCharData: FutuChar) => {
-          return (
-            <FutuCharCard key={`about-${name}`} futuramaData={futuCharData} />
-          );
-        })}
+        <CharWrapper>
+          {data.map((futuCharData: FutuChar) => {
+            return (
+              <FutuCharCard key={`about-${name}`} futuramaData={futuCharData} />
+            );
+          })}
+        </CharWrapper>
       </div>
     </div>
   );
 };
+
+const CharWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5em;
+  margin-bottom: 100px;
+`;

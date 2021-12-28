@@ -17,12 +17,24 @@ export const FutuInvenContainer = ({ name }: FuturamaContainerProps) => {
     <div>
       <h1>Futurama {name}</h1>
       <div>
-        {data.map((futuInvenData: FutuInven) => {
-          return (
-            <FutuInvenCard key={`about-${name}`} futuramaData={futuInvenData} />
-          );
-        })}
+        <InvenWrapper>
+          {data.map((futuInvenData: FutuInven) => {
+            return (
+              <FutuInvenCard
+                key={`about-${name}`}
+                futuramaData={futuInvenData}
+              />
+            );
+          })}
+        </InvenWrapper>
       </div>
     </div>
   );
 };
+
+const InvenWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5em;
+  margin-bottom: 100px;
+`;

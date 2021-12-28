@@ -10,12 +10,14 @@ export const FutuInvenCard = ({ futuramaData }: FuturamaProps) => {
 
   return (
     <div>
-      <FutuSynopsisRed>
-        {category} - {title}
-      </FutuSynopsisRed>
-      <p>price: {price}</p>
-      <p>stock: {stock}</p>
-      <div key={`about-${id}-inventory`}>desc: {description}</div>
+      <CardWrapper>
+        <FutuSynopsisRed>
+          {category} - {title}
+        </FutuSynopsisRed>
+        <p>price: {price}</p>
+        <p>stock: {stock}</p>
+        <div key={`about-${id}-inventory`}>desc: {description}</div>
+      </CardWrapper>
     </div>
   );
 };
@@ -24,4 +26,11 @@ const FutuSynopsisRed = styled.h3`
   color: red;
   border-top: 1px solid bolack;
   padding-top: 5px;
+`;
+
+const CardWrapper = styled.div`
+  box-shadow: 5px 5px 5px gray;
+  padding: 0.5em;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 `;

@@ -10,20 +10,21 @@ export const FutuCastCard = ({ futuramaData }: FuturamaProps) => {
 
   return (
     <div>
-      <FutuSynopsisRed>Name</FutuSynopsisRed>
-      <p>{name}</p>
-      <FutuSynopsisBlue>Born</FutuSynopsisBlue>
-      <p>{born}</p>
-      <FutuSynopsisGreen>
-        <a href={bio.url}>More Detail Link</a>
-      </FutuSynopsisGreen>
+      <CardWrapper>
+        <FutuSynopsisRed>Name</FutuSynopsisRed>
+        <p>{name}</p>
+        <FutuSynopsisBlue>Born</FutuSynopsisBlue>
+        <p>{born}</p>
+        <FutuSynopsisGreen>
+          <a href={bio.url}>More Detail Link</a>
+        </FutuSynopsisGreen>
+      </CardWrapper>
     </div>
   );
 };
 
 const FutuSynopsisRed = styled.h3`
   color: red;
-  border-top: 1px solid black;
   padding-top: 5px;
 `;
 const FutuSynopsisBlue = styled.h3`
@@ -33,4 +34,11 @@ const FutuSynopsisBlue = styled.h3`
 const FutuSynopsisGreen = styled.h3`
   color: green;
   padding-top: 5px;
+`;
+
+const CardWrapper = styled.div`
+  box-shadow: 5px 5px 5px gray;
+  padding: 0.5em;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 `;

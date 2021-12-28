@@ -10,20 +10,21 @@ export const FutuEpiCard = ({ futuramaData }: FuturamaProps) => {
 
   return (
     <div>
-      <FutuSynopsisRed>
-        {title} - {number}
-      </FutuSynopsisRed>
-      <FutuSynopsisBlue>writers</FutuSynopsisBlue>
-      <p>{writers}</p>
-      <FutuSynopsisGreen>Desc</FutuSynopsisGreen>
-      <p>{desc}</p>
+      <CardWrapper>
+        <FutuSynopsisRed>
+          {title} - {number}
+        </FutuSynopsisRed>
+        <FutuSynopsisBlue>writers</FutuSynopsisBlue>
+        <p>{writers}</p>
+        <FutuSynopsisGreen>Desc</FutuSynopsisGreen>
+        <p>{desc}</p>
+      </CardWrapper>
     </div>
   );
 };
 
 const FutuSynopsisRed = styled.h3`
   color: red;
-  border-top: 1px solid black;
   padding-top: 5px;
 `;
 const FutuSynopsisBlue = styled.h3`
@@ -33,4 +34,11 @@ const FutuSynopsisBlue = styled.h3`
 const FutuSynopsisGreen = styled.h3`
   color: green;
   padding-top: 5px;
+`;
+
+const CardWrapper = styled.div`
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px gray;
+  padding: 0.5em;
+  height: 400px;
 `;

@@ -12,7 +12,7 @@ export const Navigation = () => {
   return (
     <Header>
       <H1>
-        <Link href={`https://futurama-about-com.vercel.app/`}>
+        <Link href={`/`}>
           <a>Futurama</a>
         </Link>
       </H1>

@@ -10,7 +10,7 @@ export const FutuQuesCard = ({ futuramaData }: FuturamaProps) => {
 
   return (
     <div>
-      <FutuQuesBorder>
+      <CardWrapper>
         <FutuSynopsisRed>
           {id}. {question}
         </FutuSynopsisRed>
@@ -26,7 +26,7 @@ export const FutuQuesCard = ({ futuramaData }: FuturamaProps) => {
         </div>
         <p>* if u wanna answer, hover this green bar</p>
         <CheckAnswer>A. {correctAnswer}</CheckAnswer>
-      </FutuQuesBorder>
+      </CardWrapper>
     </div>
   );
 };
@@ -51,6 +51,13 @@ const CheckAnswer = styled.p`
 
 const FutuQuesBorder = styled.div`
   border: 1px solid black;
+`;
+
+const CardWrapper = styled.div`
+  box-shadow: 5px 5px 5px gray;
+  padding: 0.5em;
+  height: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
 // https://futurama-about-com.vercel.app/futurama/info
