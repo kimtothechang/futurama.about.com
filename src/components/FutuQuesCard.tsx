@@ -52,3 +52,11 @@ const CheckAnswer = styled.p`
 const FutuQuesBorder = styled.div`
   border: 1px solid black;
 `;
+
+// https://futurama-about-com.vercel.app/futurama/info
+// https://futurama-about-com.vercel.app/futurama/episodes
+// https://futurama-about-com.vercel.app/futurama/questions
+// https://futurama-about-com.vercel.app/futurama/inventory
+
+// https://futurama-about-com.vercel.app/futurama/characters
+// https://futurama-about-com.vercel.app/futurama/ast
