@@ -12,7 +12,7 @@ export const FutuCharCard = ({ futuramaData }: FuturamaProps) => {
   return (
     <div>
       <FutuSynopsisRed>
-        <Image src={images.main} alt="" />
+        <img src={images.main} alt="" />
       </FutuSynopsisRed>
       <FutuSynopsisBlue>Name</FutuSynopsisBlue>
       <p>{`${name.first} ${name.middle} ${name.last} - ${age}`}</p>

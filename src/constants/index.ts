@@ -10,32 +10,32 @@ export const MEDIA_QUERY_END_POINT = {
 export const ROUTES = [
   {
     ID: 1,
-    PATH: "futurama/info",
+    PATH: "/info",
     LABEL: "information",
   },
   {
     ID: 2,
-    PATH: "futurama/character",
+    PATH: "/character",
     LABEL: "character",
   },
   {
     ID: 3,
-    PATH: "futurama/cast",
+    PATH: "/cast",
     LABEL: "cast",
   },
   {
     ID: 4,
-    PATH: "futurama/episodes",
+    PATH: "/episodes",
     LABEL: "episodes",
   },
   {
     ID: 5,
-    PATH: "futurama/questions",
+    PATH: "/questions",
     LABEL: "questions",
   },
   {
     ID: 6,
-    PATH: "futurama/inventory",
+    PATH: "/inventory",
     LABEL: "inventory",
   },
 ];

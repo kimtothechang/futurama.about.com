@@ -12,14 +12,16 @@ export const Navigation = () => {
   return (
     <Header>
       <H1>
-        <Link href={`https://futurama-about-com.vercel.app/`}>Futurama</Link>
+        <Link href={`https://futurama-about-com.vercel.app/`}>
+          <a>Futurama</a>
+        </Link>
       </H1>
       <Nav>
         <MenuList>
           {ROUTES.map((routeObject: ROUTE) => {
             return (
               <Li key={`${routeObject.ID}`}>
-                <Link href={routeObject.PATH}>
+                <Link href={`/futurama${routeObject.PATH}`}>
                   <a>{routeObject.LABEL}</a>
                 </Link>
               </Li>
