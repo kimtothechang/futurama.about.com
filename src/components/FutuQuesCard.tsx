@@ -14,10 +14,10 @@ export const FutuQuesCard = ({ futuramaData }: FuturamaProps) => {
         <FutuSynopsisRed>
           {id}. {question}
         </FutuSynopsisRed>
-        <div key={`about-${id}-answers`}>
+        <div>
           {possibleAnswers.map((pos, index) => {
             return (
-              <p>
+              <p key={`about-answers-${id}`}>
                 {" "}
                 {index + 1}) {pos}
               </p>
