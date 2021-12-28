@@ -34,7 +34,7 @@ const Home: NextPage = () => {
           </a>
 
           <a
-            href="https://futurama-about-com.vercel.app/futurama/characters"
+            href="https://futurama-about-com.vercel.app/futurama/character"
             className={styles.card}
           >
             <h2>Characters &rarr;</h2>
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
           </a>
 
           <a
-            href="https://futurama-about-com.vercel.app/futurama/ast"
+            href="https://futurama-about-com.vercel.app/futurama/cast"
             className={styles.card}
           >
             <h2>Cast &rarr;</h2>
