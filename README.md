@@ -9,3 +9,7 @@
 - Typescript
 - Emotion
 - useSWR
+
+## 🎈 Deploy
+
+- <a href="https://futurama-about-com.vercel.app/">link</a>
